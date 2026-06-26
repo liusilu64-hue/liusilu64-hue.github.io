@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Lucia · HMI Portfolio</title><meta content="A focused portfolio on matrix judgement, platform extension, usability testing, AI workflow and 3D cockpit practice." name="description"/><meta content="#11110f" name="theme-color"/><style>
+:root{
+  --bg:#eef2f7;
+  --bg2:#f7f9fc;
+  --paper:rgba(255,255,255,.82);
+  --paper-strong:#fff;
+  --line:#d9e1ee;
+  --line-strong:#c7d1e2;
+  --text:#0f1728;
+  --text2:#2b3850;
+  --muted:#6f7c91;
+  --muted2:#9aa6b8;
+  --blue:#2f6cff;
+  --blue2:#8cb6ff;
+  --blueSoft:rgba(47,108,255,.12);
+  --shadow:0 18px 60px rgba(28,47,84,.08);
+  --shadow2:0 28px 90px rgba(28,47,84,.12);
+  --page-pad:clamp(18px, 5vw, 72px);
+  --max:1600px;
+  --radius:34px;
+  --radius-lg:48px;
+  --section-gap:clamp(96px, 11vw, 180px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font:18px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 15% 0%, rgba(154,186,255,.25), transparent 24%),
+    radial-gradient(circle at 84% 8%, rgba(86,129,255,.18), transparent 28%),
+    linear-gradient(180deg,var(--bg2) 0%, var(--bg) 100%);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+body::before,body::after{
+  content:"";position:fixed;inset:auto auto 10% -8%;width:24vw;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%, rgba(47,108,255,.14), rgba(47,108,255,0));pointer-events:none;z-index:-1;filter:blur(12px)
+}
+body::after{inset:12% -10% auto auto;width:34vw;background:radial-gradient(circle at 50% 50%, rgba(171,188,255,.18), rgba(171,188,255,0));}
+a{text-decoration:none;color:inherit}
+img,video{display:block;max-width:100%;height:auto}
+video{width:100%;height:auto;border:0;outline:0}
+.wrap{width:min(var(--max), calc(100vw - var(--page-pad) * 2));margin-inline:auto}
+.site-header{position:sticky;top:0;z-index:120;background:rgba(247,249,252,.76);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid rgba(15,23,40,.06)}
+.site-header .wrap{display:flex;align-items:center;gap:24px;min-height:78px}
+.brand{font-size:15px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.brand small{display:block;font-size:11px;letter-spacing:.18em;color:var(--muted2);margin-top:4px}
+.nav{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.nav a{padding:10px 14px;border-radius:999px;font-size:14px;font-weight:700;color:var(--muted);transition:.25s ease}
+.nav a:hover,.nav a.is-active{background:var(--blueSoft);color:var(--text)}
+.hero{padding:clamp(54px,8vw,96px) 0 clamp(88px,12vw,160px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:clamp(28px,5vw,64px);align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--blue)}
+.eyebrow::before{content:"";width:44px;height:2px;background:linear-gradient(90deg,var(--blue),transparent);display:block}
+.hero h1{margin:18px 0 16px;font-size:clamp(3rem,7vw,6.3rem);line-height:1.02;letter-spacing:-.06em;max-width:9ch}
+.hero .subline{font-size:clamp(1.18rem,2vw,1.46rem);color:var(--text2);max-width:32em}
+.hero .intro{margin-top:18px;color:var(--muted);max-width:34em;font-size:1rem}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:999px;font-size:15px;font-weight:800;border:1px solid transparent;transition:.22s ease}
+.btn.primary{background:var(--text);color:#fff;box-shadow:var(--shadow)}
+.btn.secondary{background:rgba(255,255,255,.72);border-color:var(--line);color:var(--text)}
+.btn.ghost{background:rgba(255,255,255,.55);border-color:rgba(47,108,255,.14);color:var(--blue)}
+.hero-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:34px}
+.hero-metrics .metric{padding:20px;border-radius:28px;background:var(--paper);border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow)}
+.metric strong{display:block;font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.05em;line-height:1;color:var(--text)}
+.metric span{display:block;margin-top:6px;font-size:13px;color:var(--muted);font-weight:700}
+.hero-media{position:relative;min-height:min(74vh,760px);padding:22px;border-radius:44px;background:linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.68));border:1px solid rgba(255,255,255,.92);box-shadow:var(--shadow2);overflow:hidden}
+.hero-media::before{content:"";position:absolute;inset:6% 10% auto auto;width:min(68%,560px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 35%, rgba(103,161,255,.44), rgba(103,161,255,.07) 58%, rgba(103,161,255,0) 68%)}
+.hero-media::after{content:"";position:absolute;inset:auto auto 7% 6%;width:min(22vw,240px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 50%, rgba(200,222,255,.7), rgba(200,222,255,0));filter:blur(3px)}
+.portrait-stage{position:absolute;inset:8px 12px 0 12px;display:flex;align-items:flex-end;justify-content:flex-end;pointer-events:none;padding-left:0}
+.portrait-stage img{width:min(104%,820px);max-height:104%;object-fit:contain;object-position:56% 100%;filter:drop-shadow(0 36px 80px rgba(22,40,78,.14));}
+.hero-note{position:absolute;left:28px;bottom:22px;padding:18px 20px;max-width:320px;border-radius:24px;background:rgba(255,255,255,.88);border:1px solid rgba(47,108,255,.12);max-width:280px;box-shadow:var(--shadow)}
+.hero-note strong{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.hero-note p{margin:0;font-size:15px;line-height:1.62;color:var(--muted)}
+.section{padding:var(--section-gap) 0}
+.section-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:end;margin-bottom:34px}
+.section-header h2{margin:0;font-size:clamp(2rem,4.5vw,3.8rem);line-height:1.06;letter-spacing:-.05em}
+.section-header p{margin:0;max-width:38em;color:var(--muted)}
+.kicker-row{display:inline-flex;align-items:center;gap:12px;font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--blue);font-weight:800;margin-bottom:14px}
+.kicker-row::before{content:"";display:block;width:38px;height:2px;background:linear-gradient(90deg,var(--blue),transparent)}
+.safe-note{font-size:14px;color:var(--muted);padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line)}
+.stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.stat-card{padding:28px;border-radius:32px;background:linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.78));border:1px solid rgba(255,255,255,.86);box-shadow:var(--shadow);min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
+.stat-card .label{font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--muted2)}
+.stat-card .value{font-size:clamp(2.4rem,4vw,4rem);font-weight:900;line-height:1;letter-spacing:-.06em;margin-top:10px}
+.stat-card .desc{margin-top:12px;color:var(--text2);font-size:15px;line-height:1.7}
+.stat-card .sub{margin-top:10px;font-size:13px;color:var(--muted)}
+.split{display:grid;grid-template-columns:minmax(340px,.92fr) minmax(0,1.08fr);gap:clamp(30px,5vw,72px);align-items:start}
+.split.reverse{grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr)}
+.sticky{position:sticky;top:98px}
+.copy h3{margin:0 0 16px;font-size:clamp(2rem,4vw,3.5rem);line-height:1.08;letter-spacing:-.05em}
+.copy p.lead{margin:0;color:var(--text2);font-size:1.05rem;max-width:34em}
+.copy .mini{margin-top:16px;color:var(--muted);font-size:.98rem;max-width:34em}
+.bullets{display:grid;gap:12px;margin:28px 0 0;padding:0;list-style:none}
+.bullets li{padding:16px 18px;border-radius:24px;background:rgba(255,255,255,.76);border:1px solid var(--line);display:flex;gap:14px;align-items:flex-start;box-shadow:var(--shadow)}
+.bullets li i{flex:0 0 auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--blueSoft);color:var(--blue);font-style:normal;font-weight:800;font-size:13px;margin-top:2px}
+.bullets strong{display:block;font-size:1.02rem;margin-bottom:4px}
+.bullets span{display:block;color:var(--muted);font-size:15px;line-height:1.65}
+.data-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.data-pills span{padding:10px 14px;border-radius:999px;background:rgba(47,108,255,.08);border:1px solid rgba(47,108,255,.14);font-weight:800;color:var(--text2);font-size:14px}
+.media-stack{display:grid;gap:18px}
+.media-card{position:relative;padding:18px;border-radius:34px;background:linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.8));border:1px solid rgba(255,255,255,.85);box-shadow:var(--shadow);overflow:hidden}
+.media-card.dark{background:linear-gradient(180deg, rgba(17,27,44,.96), rgba(18,27,43,.88));border-color:rgba(255,255,255,.08);color:#f8fbff}
+.media-card h4{margin:0 0 12px;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2)}
+.media-card.dark h4{color:rgba(255,255,255,.7)}
+.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.media-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.media-grid .tile{padding:12px;border-radius:24px;background:rgba(255,255,255,.6);border:1px solid var(--line)}
+.media-grid .tile img,.media-grid .tile video{border-radius:18px;width:100%;aspect-ratio:16/10;object-fit:cover;background:#eef3f9}
+.media-grid .tile figcaption{margin-top:10px;font-size:13px;color:var(--muted);line-height:1.5}
+.note-card{padding:24px;border-radius:28px;background:rgba(47,108,255,.07);border:1px solid rgba(47,108,255,.14);margin-top:18px}
+.note-card strong{display:block;margin-bottom:8px;font-size:15px;color:var(--blue)}
+.note-card p{margin:0;color:var(--text2);font-size:15px}
+.ribbon{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.ribbon span{padding:11px 14px;border-radius:999px;background:rgba(255,255,255,.84);border:1px solid var(--line);font-size:14px;font-weight:800;color:var(--text2)}
+.gif-rail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:18px}
+.gif-rail img{width:100%;aspect-ratio:1/1.18;object-fit:cover;border-radius:22px;background:#f5f7fb;border:1px solid var(--line);box-shadow:var(--shadow)}
+.video-rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.video-rail .media-card{padding:14px}
+.video-rail video{aspect-ratio:16/10;object-fit:cover;border-radius:22px}
+
+.safe-note{font-weight:800;color:var(--text2)}
+.media-card h4{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.media-card h4 .tag{font-size:11px;letter-spacing:.08em;text-transform:none;color:var(--muted);font-weight:700}
+.media-grid.usability-wide{grid-template-columns:1fr;gap:18px;margin-top:24px}
+.media-grid.usability-wide .tile img{aspect-ratio:auto;object-fit:contain;background:#fff;max-height:none}
+.media-grid.usability-wide .tile figcaption{font-size:14px}
+.gif-hero{padding:10px;border-radius:24px;background:rgba(255,255,255,.64);border:1px solid var(--line);box-shadow:var(--shadow)}
+.gif-hero img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;background:#eef3f9}
+.video-rail{grid-template-columns:repeat(2,minmax(0,1fr))}
+.showcase-shell{position:relative;padding:16px;border-radius:34px;background:linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.82));border:1px solid rgba(255,255,255,.85);box-shadow:var(--shadow);overflow:hidden;height:920px}
+.showcase-shell::before,.showcase-shell::after{content:"";position:absolute;left:0;right:0;height:120px;z-index:3;pointer-events:none}
+.showcase-shell::before{top:0;background:linear-gradient(180deg, rgba(247,249,252,1), rgba(247,249,252,0))}
+.showcase-shell::after{bottom:0;background:linear-gradient(0deg, rgba(247,249,252,1), rgba(247,249,252,0))}
+.showcase-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:6px 6px 18px;position:relative;z-index:4}
+.showcase-head h4{margin:0;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2)}
+.showcase-head span{font-size:13px;color:var(--muted)}
+.showcase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;height:calc(100% - 48px)}
+.showcase-col{display:grid;gap:16px;align-content:start;animation:showcaseUp 30s linear infinite}
+.showcase-col.reverse{animation-name:showcaseDown;animation-duration:32s}
+.showcase-col.slow{animation-duration:36s}
+.showcase-card{padding:10px;border-radius:24px;background:rgba(255,255,255,.78);border:1px solid var(--line);box-shadow:var(--shadow)}
+.showcase-card img{width:100%;border-radius:16px;aspect-ratio:4/3;object-fit:cover;background:#eef3f9;display:block}
+@keyframes showcaseUp{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
+@keyframes showcaseDown{0%{transform:translateY(-50%)}100%{transform:translateY(0)}}
+.protected{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.protected img,.protected video{-webkit-user-drag:none;user-select:none}
+@media (max-width:1120px){.video-rail{grid-template-columns:1fr 1fr}.showcase-grid{grid-template-columns:1fr 1fr}.showcase-shell{height:820px}}
+@media (max-width:720px){.showcase-shell{height:auto;padding:12px}.showcase-grid{grid-template-columns:1fr}.showcase-col,.showcase-col.reverse,.showcase-col.slow{animation:none}.showcase-shell::before,.showcase-shell::after{display:none}.media-grid.usability-wide .tile img,.gif-hero img{aspect-ratio:16/10}.video-rail{grid-template-columns:1fr}}
+
+.protected{user-select:none;-webkit-user-select:none}
+.protected img,.protected video{-webkit-user-drag:none;user-select:none}
+.protected .lock-note{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);margin-top:14px}
+.lock-note .dot{width:9px;height:9px;border-radius:50%;background:var(--blue)}
+.kb-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:20px}
+.kb-card{padding:24px;border-radius:30px;background:rgba(255,255,255,.86);border:1px solid var(--line);box-shadow:var(--shadow)}
+.kb-card strong{display:block;font-size:1.2rem;line-height:1.3}
+.kb-card span{display:block;margin-top:8px;font-size:14px;color:var(--muted)}
+.awards-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+.award-list{display:grid;gap:12px;margin-top:18px}
+.award-list .item{padding:14px 16px;border-radius:22px;background:rgba(255,255,255,.78);border:1px solid var(--line);font-size:15px;color:var(--text2)}
+.contact{padding:calc(var(--section-gap) * .85) 0 calc(var(--section-gap) * 1.05)}
+.contact-card{display:grid;grid-template-columns:1fr auto;gap:26px;padding:34px;border-radius:40px;background:linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.82));border:1px solid rgba(255,255,255,.88);box-shadow:var(--shadow2)}
+.contact-card h3{margin:0 0 10px;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em}
+.contact-card p{margin:0 0 18px;color:var(--muted);max-width:32em}
+.contact-list{display:grid;gap:10px}
+.contact-list div{font-size:16px;color:var(--text2)}
+.contact-list strong{display:inline-block;min-width:78px;color:var(--text);font-weight:800}
+.qr-box{width:168px;padding:12px;border-radius:26px;background:#fff;border:1px solid var(--line)}
+.qr-box img{width:100%;aspect-ratio:1/1;border-radius:18px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1)}
+.reveal.is-in{opacity:1;transform:none}
+[data-parallax]{will-change:transform}
+footer{padding:26px 0 54px;color:var(--muted);font-size:13px;text-align:center}
+@media (max-width: 1120px){
+  .hero-grid,.split,.split.reverse,.awards-grid,.contact-card{grid-template-columns:1fr}
+  .sticky{position:static}
+  .hero-media{min-height:560px}
+  .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .video-rail,.kb-grid,.media-grid.three{grid-template-columns:1fr 1fr}
+}
+@media (max-width: 720px){
+  body{font-size:16px}
+  .site-header .wrap{min-height:74px}
+  .nav{display:none}
+  .hero{padding-top:38px}
+  .hero-media{min-height:460px;padding:18px}
+  .portrait-stage{inset:8px 8px 0 8px;justify-content:center}
+  .portrait-stage img{width:min(98%,500px)}
+  .hero-note{position:relative;left:auto;bottom:auto;margin-top:12px;max-width:none}
+  .section{padding:88px 0}
+  .stats-grid,.hero-metrics,.kb-grid,.video-rail,.media-grid,.media-grid.three,.gif-rail{grid-template-columns:1fr}
+  .media-grid .tile img,.media-grid .tile video,.video-rail video{aspect-ratio:16/10}
+  .contact-card{padding:24px}
+  .qr-box{width:138px}
+}
+
+
+
+.gallery-card{padding:18px}
+.gallery-stage{position:relative;aspect-ratio:16/10;border-radius:26px;overflow:hidden;background:#f4f7fc;border:1px solid var(--line);box-shadow:var(--shadow)}
+.gallery-stage img{width:100%;height:100%;object-fit:contain;background:#f8fbff}
+.gallery-caption{padding:14px 4px 4px}
+.gallery-caption strong{display:block;font-size:15px;color:var(--text);margin-bottom:4px}
+.gallery-caption span{display:block;font-size:13px;line-height:1.6;color:var(--muted)}
+.thumb-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.thumb-btn{padding:10px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.68);cursor:pointer;text-align:left;transition:.2s ease;box-shadow:var(--shadow)}
+.thumb-btn:hover,.thumb-btn.is-active{border-color:rgba(47,108,255,.38);box-shadow:0 0 0 3px rgba(47,108,255,.12), var(--shadow)}
+.thumb-btn img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;background:#eef3f9}
+.thumb-btn span{display:block;margin-top:8px;font-size:12px;line-height:1.45;color:var(--muted)}
+@media (max-width:720px){.thumb-row{grid-template-columns:1fr}.gallery-card{padding:14px}}
+
+/* --- v7 refinements --- */
+.nav .lang-link{margin-left:4px}
+.showcase-shell.mega{height:1080px;padding:18px 18px 16px}
+.showcase-shell.mega .showcase-head{margin:4px 6px 14px}
+.showcase-shell.mega .showcase-head h4{font-size:16px;color:var(--text);letter-spacing:.04em;text-transform:none}
+.showcase-shell.mega .showcase-head p{margin:6px 0 0;font-size:13px;color:var(--muted);max-width:34em;line-height:1.55}
+.showcase-shell.mega .showcase-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;height:calc(100% - 96px)}
+.showcase-tags{display:flex;gap:10px;flex-wrap:wrap;margin:0 6px 16px;position:relative;z-index:4}
+.showcase-tags span{padding:8px 12px;border-radius:999px;background:rgba(47,108,255,.08);border:1px solid rgba(47,108,255,.14);font-size:12px;font-weight:800;color:var(--text2)}
+.showcase-shell.mega .showcase-col{gap:14px;animation-duration:38s}
+.showcase-shell.mega .showcase-col.reverse{animation-duration:41s}
+.showcase-shell.mega .showcase-col.slow{animation-duration:45s}
+.showcase-card{position:relative;overflow:hidden}
+.showcase-card.tall img{aspect-ratio:4/5}
+.showcase-card.wide img{aspect-ratio:16/10}
+.showcase-card.square img{aspect-ratio:1/1}
+.showcase-card figcaption{margin-top:8px;padding:0 4px 2px;font-size:12px;line-height:1.45;color:var(--muted)}
+.showcase-card figcaption strong{display:block;font-size:13px;color:var(--text2);margin-bottom:2px}
+.research-3d{display:grid;grid-template-columns:minmax(280px,.84fr) minmax(0,1.16fr);gap:clamp(24px,4vw,48px);margin-top:32px;padding-top:18px;border-top:1px solid rgba(15,23,40,.06)}
+.research-3d-copy h3{margin:0 0 14px;font-size:clamp(1.9rem,3vw,3rem);line-height:1.08;letter-spacing:-.04em}
+.research-3d-copy .lead{margin:0 0 18px;color:var(--muted);font-size:1rem;max-width:34em}
+.research-3d .video-rail{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.research-3d .video-rail .media-card{padding:14px}
+.gif-hero{padding:10px;border-radius:24px;background:rgba(255,255,255,.64);border:1px solid var(--line);box-shadow:var(--shadow)}
+.gif-player{position:relative;aspect-ratio:16/10;border-radius:18px;overflow:hidden;background:#eef3f9}
+.gif-player img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:gifSeq 12s infinite ease-in-out;will-change:opacity,transform;transform:scale(1.01)}
+.gif-player img:nth-child(1){animation-delay:0s}
+.gif-player img:nth-child(2){animation-delay:2.4s}
+.gif-player img:nth-child(3){animation-delay:4.8s}
+.gif-player img:nth-child(4){animation-delay:7.2s}
+.gif-player img:nth-child(5){animation-delay:9.6s}
+@keyframes gifSeq{0%,17%{opacity:0}4%,20%{opacity:1}24%,100%{opacity:0}}
+.media-grid.usability-wide{grid-template-columns:1fr;gap:18px;margin-top:24px}
+.media-grid.usability-wide .tile{padding:0;background:transparent;border:0;box-shadow:none}
+.media-grid.usability-wide .tile img{aspect-ratio:auto;object-fit:contain;background:#fff;max-height:none;border:1px solid var(--line);box-shadow:var(--shadow)}
+.media-grid.usability-wide .tile figcaption{font-size:14px;padding:4px 4px 0}
+@media (max-width:1280px){.showcase-shell.mega .showcase-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.showcase-shell.mega{height:980px}}
+@media (max-width:1120px){.research-3d{grid-template-columns:1fr}.showcase-shell.mega .showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.showcase-shell.mega{height:930px}}
+@media (max-width:720px){.showcase-shell.mega{height:auto;padding:14px}.showcase-shell.mega .showcase-grid{grid-template-columns:1fr}.showcase-shell.mega .showcase-col,.showcase-shell.mega .showcase-col.reverse,.showcase-shell.mega .showcase-col.slow{animation:none}.showcase-shell.mega::before,.showcase-shell.mega::after{display:none}.research-3d .video-rail{grid-template-columns:1fr}.showcase-head{display:block}.showcase-head span{display:block;margin-top:6px}}
+@media (prefers-reduced-motion:reduce){.showcase-col,.showcase-col.reverse,.showcase-col.slow,.gif-player img{animation:none !important}.reveal{opacity:1 !important;transform:none !important}}
+
+
+.gif-player{aspect-ratio:16/9;background:#f4f7fc}
+.gif-player img{object-fit:contain !important;background:#f8fbff;padding:8px}
+.gif-rail img{aspect-ratio:16/9 !important;object-fit:contain !important;background:#f8fbff;padding:6px;border:1px solid var(--line);border-radius:18px}
+.gif-rail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+@media (max-width:1120px){.gif-rail{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:720px){.gif-rail{grid-template-columns:1fr 1fr}}
+.contact-card{align-items:end}
+.qr-box{width:clamp(146px,11vw,176px);padding:0;border-radius:24px;overflow:hidden;justify-self:end;align-self:end;aspect-ratio:1/1;display:block}
+.qr-box img{width:100%;height:100%;object-fit:contain;padding:12px;border-radius:0}
+.hero-actions .btn.secondary{background:#fff}
+.media-grid.tight{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.media-grid.tight .tile{padding:0;background:transparent;border:0;box-shadow:none}
+.media-grid.tight .tile img{width:100%;aspect-ratio:auto;object-fit:contain;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:20px}
+.media-grid.tight .tile figcaption{font-size:14px;padding:6px 4px 0;color:var(--muted)}
+.waterfall-shell{position:relative;height:900px;padding:20px;border-radius:34px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.82));border:1px solid rgba(255,255,255,.86);box-shadow:var(--shadow)}
+.waterfall-shell::before,.waterfall-shell::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:4}
+.waterfall-shell::before{background:linear-gradient(180deg, rgba(247,249,252,.95), rgba(247,249,252,0) 18%, rgba(247,249,252,0) 82%, rgba(247,249,252,.95))}
+.waterfall-shell::after{background:linear-gradient(90deg, rgba(247,249,252,.7), rgba(247,249,252,0) 12%, rgba(247,249,252,0) 88%, rgba(247,249,252,.7))}
+.waterfall-stage{position:absolute;inset:28px;transform:perspective(2200px) rotateX(11deg) rotateY(-12deg) rotateZ(-1deg);transform-origin:center center;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:start}
+.waterfall-col{height:100%;overflow:hidden}
+.waterfall-track{display:flex;flex-direction:column;gap:16px;will-change:transform}
+.waterfall-card{padding:10px;border-radius:24px;background:rgba(255,255,255,.82);border:1px solid var(--line);box-shadow:var(--shadow)}
+.waterfall-card img{width:100%;display:block;border-radius:16px;aspect-ratio:4/3;object-fit:cover;background:#eef3f9}
+.waterfall-shell .showcase-head{position:relative;z-index:5;display:flex;justify-content:space-between;gap:14px;align-items:flex-end;margin:4px 6px 18px}
+.waterfall-shell .showcase-head h4{font-size:16px;margin:0;color:var(--text)}
+.waterfall-shell .showcase-head p{margin:6px 0 0;font-size:13px;line-height:1.6;color:var(--muted);max-width:34em}
+.waterfall-shell .showcase-head span{font-size:12px;color:var(--muted2);letter-spacing:.12em;text-transform:uppercase}
+@media (max-width:1280px){.waterfall-shell{height:820px}.waterfall-stage{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:980px){.waterfall-shell{height:760px}.waterfall-stage{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:720px){.waterfall-shell{height:auto;padding:14px}.waterfall-stage{position:relative;inset:auto;transform:none;grid-template-columns:1fr}.waterfall-col{height:auto}.waterfall-track{transform:none !important}.waterfall-shell::before,.waterfall-shell::after{display:none}}
+</style><link href="assets/css/cinematic.css?v=13" rel="stylesheet"/></head><body>
+<header class="site-header"><div class="wrap"><div class="brand">Lucia<small>HMI / Interaction / System Design</small></div><nav class="nav"><a href="#data">Data</a><a href="#experience">Experience</a><a href="#capability">Capability</a><a href="#execution">Execution</a><a href="#research">AI / Research / 3D</a><a href="#innovation">Innovation / Awards</a><a href="#contact">Contact</a> <a class="lang-link" href="index.html">中文</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div class="hero-copy reveal"><div class="eyebrow">Lucia · Industrial Design Engineer</div><h1>Not stacking projects. Showing real capability.</h1><p class="subline">Ten years in cockpit UX, turning high-change delivery into repeatable systems.</p><p class="intro">I focus on the part between “a beautiful screen” and “a shippable system”: converging changes, making reviews visible, proving issues with data, and turning personal experience into team assets.</p><div class="hero-actions"><a class="btn primary" href="#data">See my numbers</a><a class="btn secondary" href="#contact">Let’s talk</a></div><div class="hero-metrics"><div class="metric"><strong>10+</strong><span>years in cockpit UX</span></div><div class="metric"><strong>40+</strong><span>OEMs served</span></div><div class="metric"><strong>70+</strong><span>projects involved</span></div><div class="metric"><strong>8</strong><span>led overseas programs</span></div></div></div>
+<div class="hero-media reveal" data-parallax="-0.02"><div class="portrait-stage"><img alt="Lucia portrait" src="assets/img/portrait.png"/></div><div class="hero-note"><strong>Current focus</strong><p>把交互、3D、引擎、研究与规范串成一条能落地、能复用、能讲清价值的设计链路。</p></div></div></div></section>
+<section class="section" id="data"><div class="wrap"><div class="section-header reveal"><div><div class="kicker-row">Data</div><h2>My numbers</h2><p>Results first. Then the process.</p></div><div class="safe-note">Credible, evidence-backed data</div></div>
+<div class="stats-grid">
+<div class="stat-card reveal"><div><div class="label">T1K / HS5115A</div><div class="value">+42%</div><div class="desc">Absorbed 24 repeated requirement changes and lifted overall review efficiency by 42%.</div></div><div class="sub">7 change-fee rounds · locked 17 days earlier · 60–80h saved</div></div>
+<div class="stat-card reveal"><div><div class="label">T1H / T1K ISSUE CLOSURE</div><div class="value">×5</div><div class="desc">128 experience issues were turned into a cross-project management loop, raising closure efficiency by about 5×.</div></div><div class="sub">3 information methods + 1 process document</div></div>
+<div class="stat-card reveal"><div><div class="label">USABILITY TESTING</div><div class="value">60d</div><div class="desc">Completed planning, recruitment, execution and reporting for a 38-user usability program.</div></div><div class="sub">Average usability 61.04 / 100 · passing line 68</div></div>
+<div class="stat-card reveal"><div><div class="label">ANIMATION COMPRESSION</div><div class="value">90M → 6.8M</div><div class="desc">Switched animation assets from frame sequences to JSON and cut package size by about 93%.</div></div><div class="sub">Memory -30% · loading -20%</div></div>
+<div class="stat-card reveal"><div><div class="label">FORD PLATFORM</div><div class="value">4200+</div><div class="desc">Closed 400+ issues with 100% closure based on 4200+ reviewed HMI screens.</div></div><div class="sub">100+ engineers trained · 3 client thank-you letters</div></div>
+<div class="stat-card reveal"><div><div class="label">ORG &amp; METHODS</div><div class="value">34人</div><div class="desc">Built 3 reusable knowledge systems while supporting 34 title-pass cases.</div></div><div class="sub">2026 HMI standards · overseas wording consistency · AI knowledge</div></div>
+</div></div></section>
+<section class="section" id="experience"><div class="wrap split"><div class="copy sticky reveal"><div class="kicker-row">Experience</div><h3>Three career stages. One consistent direction.</h3><p class="lead">From UI execution, to phone projection &amp; launcher adaptation, to platform-level HMI, usability, competitor research and method building.</p><div class="data-pills"><span>10+ years</span><span>English-ready work language</span><span>Cross-language review</span></div></div><div class="media-stack"><div class="media-card reveal"><h4>2016.03–2019.06</h4><strong style="font-size:1.36rem;display:block;line-height:1.35;margin-bottom:8px">Neusoft Automotive Electronics · UI Designer</strong><p style="margin:0;color:var(--muted)">Delivered 6 domestic mass-production expansion programs; also organized product video shoots and content scripting.</p></div><div class="media-card reveal"><h4>2019.06–2022.09</h4><strong style="font-size:1.36rem;display:block;line-height:1.35;margin-bottom:8px">Neusoft Rich · Senior UX Designer</strong><p style="margin:0;color:var(--muted)">Focused on phone projection, launcher adaptation and customer-facing requirement sessions for US / Japan projects.</p></div><div class="media-card reveal"><h4>2022.09–Now</h4><strong style="font-size:1.36rem;display:block;line-height:1.35;margin-bottom:8px">Smart cockpit supplier · Deputy Director Industrial Design Engineer</strong><p style="margin:0;color:var(--muted)">Leading platform interaction work, usability testing, competitor analysis, component collaboration and method building for intelligent cockpit programs.</p></div></div></div></section>
+<section class="section" id="capability"><div class="wrap split reverse"><div class="media-stack sticky reveal"><div class="media-card gallery-card" data-gallery=""><h4>Hygge Lab / scene modes</h4><div class="gallery-stage"><img alt="Hygge lab interface" class="gallery-main" src="assets/img/chery_hygge.png"/></div><div class="gallery-caption"><strong>Hygge Lab</strong><span>Scene mode cards with clear execution states and a unified visual language.</span></div><div class="thumb-row"><button class="thumb-btn is-active" data-alt="Hygge lab interface" data-desc="Scene mode cards with clear execution states and a unified visual language." data-src="assets/img/chery_hygge.png" data-title="Hygge Lab" type="button"><img alt="Hygge thumbnail" src="assets/img/chery_hygge.png"/><span>Mode cards and auto-execution logic</span></button><button class="thumb-btn" data-alt="Chery ambient lighting" data-desc="Mode linkage, color setup and ambient-light controls framed inside one maintainable interaction system." data-src="assets/img/chery_lighting.png" data-title="Ambient lighting customization" type="button"><img alt="Lighting thumbnail" src="assets/img/chery_lighting.png"/><span>Mode linkage, color setup and custom ambient lighting</span></button><button class="thumb-btn" data-alt="Negative screen" data-desc="Quick access and hierarchy are organized to reduce entry cost and improve scanning." data-src="assets/img/ambient_search.png" data-title="High-frequency quick access" type="button"><img alt="Negative screen thumbnail" src="assets/img/ambient_search.png"/><span>Quick-access organization and hierarchy control</span></button></div></div>
+<div class="media-grid tight evidence-01">
+<figure class="tile"><img alt="Issue review evidence" src="assets/img/usability_issue.png"/><figcaption>226 / 306 / 38 / 168H</figcaption></figure>
+<figure class="tile"><img alt="Method evidence" src="assets/img/usability_efficiency.png"/><figcaption>问题巧处理与方法论</figcaption></figure>
+</div>
+</div><div class="copy reveal"><div class="kicker-row">Capability 01</div><h3>Platform extension means judging the matrix, not piling screens.</h3><p class="lead">On Chery T1H / T1K high-change programs, I changed fragmented discussion into batch review, version evidence and reusable rules.</p><ul class="bullets"><li><i>01</i><div><strong>Before / after review mechanism</strong><span>One view for the whole team, one decision frame for clients, fewer cross-version reversals.</span></div></li><li><i>02</i><div><strong>1/3 split-screen matrix</strong><span>Compressed key flow from 5 steps to 1, dropping operation steps by 80% and central-screen glance time by 60.2%.</span></div></li><li><i>03</i><div><strong>Core component variables &amp; maintenance</strong><span>Maintaining 1000+ variable items across scene modes, colors, containers and configuration combinations.</span></div></li></ul><div class="ribbon"><span>24 change rounds absorbed</span><span>42% review efficiency gain</span><span>17 days earlier lock</span><span>70% decision efficiency gain</span></div></div></div></section>
+<section class="section" id="execution"><div class="wrap split"><div class="copy sticky reveal"><div class="kicker-row">Capability 02</div><h3>Cross-language reviews need visibility, not imagination.</h3><p class="lead">In JKC Phase2, I turned review logic into visual options, so Chinese / English / Japanese / Korean communication could align on the same visible solution instead of abstract wording.</p><ul class="bullets"><li><i>01</i><div><strong>12 specification proposals</strong><span>Review pass rate reached 100%, and around 67% of historic high-frequency issues were cleared at the proposal stage.</span></div></li><li><i>02</i><div><strong>Million-level opportunity support</strong><span>Design-led proposal visualization helped convert internal review quality into stronger commercial confidence. Public wording is kept conservative.</span></div></li><li><i>03</i><div><strong>Figma Make</strong><span>Three Figma Make entries are now connected: screen adaptation, component-library visualization, and an agile interactive prototype. The team can align around one visible artifact instead of translating ideas verbally.</span></div></li></ul><div class="hero-actions"><a class="btn ghost" href="https://www.figma.com/make/MPZsMx21IKgFEBZQ7dkviy/Size-issue?t=EK4umZEOCHKvrvRO-6" rel="noopener noreferrer" target="_blank">Screen adaptation</a><a class="btn ghost" href="https://www.figma.com/make/MPZsMx21IKgFEBZQ7dkviy/Size-issue?t=EK4umZEOCHKvrvRO-6" rel="noopener noreferrer" target="_blank">Component analysis</a><a class="btn ghost" href="https://www.figma.com/make/xXvHeR9JFqft9lLpgus740/%E8%AF%AD%E9%9F%B3%E6%8F%90%E6%A1%88?t=EK4umZEOCHKvrvRO-7" rel="noopener noreferrer" target="_blank">Interactive prototype</a></div></div><div class="media-stack reveal"><div class="media-card" data-parallax="-0.01"><h4>JKC / review visualization <span class="tag">Figma Make</span></h4><img alt="JKC review" src="assets/img/review_jkc.png"/></div><div class="media-card" data-parallax="0.012"><h4>Difference sheet / faster consensus</h4><img alt="JKC matrix review" src="assets/img/review_matrix.png"/></div><div class="note-card"><strong>Not blind execution, but design certainty after real thinking.</strong><p>The difference sheet is valuable not because it is faster, but because it makes choices, constraints, and version trade-offs visible to everyone at the same time.</p></div></div></div></section>
+<section class="section alt"><div class="wrap split reverse"><div class="media-stack sticky reveal"><div class="media-card"><h4>Usability field sequence <span class="tag">GIF / loop</span></h4><div class="gif-hero"><div aria-label="Usability field testing sequence" class="gif-player"><img alt="Usability field sequence 1" src="assets/gif/seq_1.gif"/><img alt="Usability field sequence 2" src="assets/gif/seq_2.gif"/><img alt="Usability field sequence 3" src="assets/gif/seq_3.gif"/><img alt="Usability field sequence 4" src="assets/gif/seq_4.gif"/><img alt="Usability field sequence 5" src="assets/gif/seq_5.gif"/></div></div></div><div class="gif-rail"><img alt="Usability gif 1" src="assets/gif/usability_1.gif"/><img alt="Usability gif 2" src="assets/gif/usability_2.gif"/><img alt="Usability gif 3" src="assets/gif/usability_3.gif"/><img alt="Usability gif 4" src="assets/gif/usability_4.gif"/><img alt="Usability gif 5" src="assets/gif/usability_5.gif"/></div></div><div class="copy reveal"><div class="kicker-row">Capability 03</div><h3>I do not stop at design. I can take the team to the field.</h3><p class="lead">From testing plan, user recruitment and task design to observation, questionnaires, analysis and reporting, I can run the full usability loop and turn it into a reusable process.</p><ul class="bullets"><li><i>01</i><div><strong>38 users / 60 days</strong><span>The company’s first vehicle HMI usability test, completed end-to-end within 60 days.</span></div></li><li><i>02</i><div><strong>61.04 / 100</strong><span>The system average failed the 68 passing line, making the need for iteration impossible to ignore.</span></div></li><li><i>03</i><div><strong>226 / 306</strong><span>Issue tracking, user samples and effort snapshots are shown as visual proof on this page.</span></div></li></ul><div class="media-grid usability-wide"><figure class="tile media-card"><img alt="Usability issue board" src="assets/img/usability_issue.png"/><figcaption>226 / 306 / 38 / 168H</figcaption></figure><figure class="tile media-card"><img alt="Usability efficiency" src="assets/img/usability_efficiency.png"/><figcaption>Problem-handling method</figcaption></figure></div></div></div></section>
+<section class="section alt protected" id="research"><div class="wrap split reverse"><div class="media-stack sticky reveal"><div class="media-card"><h4>AI / team enablement</h4><img alt="HMI trend cover" src="assets/img/trend_cover.png"/></div>
+<div class="waterfall-shell" data-parallax="-0.01">
+<div class="showcase-head">
+<div><h4>竞品分析 / 桌面调研 / 线下评审</h4><p>用 45° 透视滚动墙把竞品分析、桌面调研与线下评审串起来，让阅读者直接感受到数量、密度和判断范围。</p></div>
+<span>自动循环展示</span>
+</div>
+<div class="waterfall-stage"><div class="waterfall-col"><div class="waterfall-track" data-speed="0.18"><div class="waterfall-card"><img alt="Research item 01" src="assets/img/research_01.png"/></div><div class="waterfall-card"><img alt="Research item 02" src="assets/img/research_02.png"/></div><div class="waterfall-card"><img alt="Research item 03" src="assets/img/research_03.png"/></div><div class="waterfall-card"><img alt="Research item 04" src="assets/img/research_04.png"/></div><div class="waterfall-card"><img alt="Research item 05" src="assets/img/research_05.png"/></div></div></div><div class="waterfall-col"><div class="waterfall-track" data-speed="0.23"><div class="waterfall-card"><img alt="Research item 06" src="assets/img/research_06.png"/></div><div class="waterfall-card"><img alt="Research item 07" src="assets/img/research_07.png"/></div><div class="waterfall-card"><img alt="Research item 08" src="assets/img/research_08.png"/></div><div class="waterfall-card"><img alt="Research item 09" src="assets/img/research_09.png"/></div><div class="waterfall-card"><img alt="Research item 10" src="assets/img/research_10.png"/></div></div></div><div class="waterfall-col"><div class="waterfall-track" data-speed="0.16"><div class="waterfall-card"><img alt="Research item 11" src="assets/img/research_11.png"/></div><div class="waterfall-card"><img alt="Research item 12" src="assets/img/research_12.png"/></div><div class="waterfall-card"><img alt="Research item 13" src="assets/img/research_13.png"/></div><div class="waterfall-card"><img alt="Research item 14" src="assets/img/research_14.png"/></div><div class="waterfall-card"><img alt="Research item 15" src="assets/img/research_15.png"/></div></div></div><div class="waterfall-col"><div class="waterfall-track" data-speed="0.2"><div class="waterfall-card"><img alt="Research item 16" src="assets/img/research_16.png"/></div><div class="waterfall-card"><img alt="Research item 17" src="assets/img/research_17.png"/></div><div class="waterfall-card"><img alt="Research item 18" src="assets/img/research_18.png"/></div><div class="waterfall-card"><img alt="Research item 19" src="assets/img/research_19.png"/></div><div class="waterfall-card"><img alt="Research item 20" src="assets/img/research_20.png"/></div></div></div></div>
+</div>
+<div class="lock-note"><span class="dot"></span><span>Only covers, selected slides and field photos are shown. Source reports are not distributed and downloading / copying is disabled.</span></div></div><div class="copy reveal"><div class="kicker-row">Capability 04</div><h3>AI, research, 3D and team enablement only matter when they become reusable methods</h3><p class="lead">I connect AI with research, translation, meeting notes, decks, image generation and small tools; then I connect competitive analysis, desk research, offline review and 3D demos into one evidence chain so decisions rely on retrievable references rather than memory alone.</p><ul class="bullets"><li><i>01</i><div><strong>AI workflow</strong><span>15 interviews, 5 role-based scenarios and 95/100 training satisfaction. The goal is not tool novelty, but repeatable use.</span></div></li><li><i>02</i><div><strong>Competitive analysis / desk research</strong><span>Trends, IA, semantics, interaction and brand expression are reviewed together; covers, contents, charts and case pages all serve judgment.</span></div></li><li><i>03</i><div><strong>Offline review / in-car validation</strong><span>Desktop conclusions must be tested against real cars, real screens and real behaviors before final decisions are made.</span></div></li><li><i>04</i><div><strong>3 knowledge systems</strong><span>AI application knowledge base, 2026 HMI-related national standards library, and overseas terminology consistency guidelines.</span></div></li></ul><div class="ribbon"><span>15 interview samples</span><span>5 role scenarios</span><span>8+ topic studies</span><span>34 title applications supported</span><span>UE5.5 → APK</span></div><div class="kb-grid"><div class="kb-card"><strong>AI application knowledge base</strong><span>Prompts, roles, translation patterns and image-generation practice turned into reusable team material.</span></div><div class="kb-card"><strong>2026 HMI-related national standards</strong><span>Bring compliance and standards forward into decision-making instead of patching them later.</span></div><div class="kb-card"><strong>Overseas terminology consistency guide</strong><span>Manage multilingual labels, tone and consistency systematically.</span></div></div></div></div><div class="research-3d reveal"><div class="research-3d-copy"><div class="kicker-row">3D / engine / validation</div><h3>UE is already running; Unity is being filled in; 3D is moving from demo to deliverable</h3><p class="lead">I have already completed the UE5.5 → Android APK pipeline, so cockpit 3D demos are no longer trapped on a PC. At the same time, I am filling in Unity and 3D modeling to place interaction, motion, engine output and real-car validation on the same chain.</p><ul class="bullets"><li><i>01</i><div><strong>UE5.5 → APK</strong><span>PAD and phone installation both work, lowering the barrier for remote reviews.</span></div></li><li><i>02</i><div><strong>3D interaction exploration</strong><span>Card displacement scaling, wallpaper switching, scene transitions and shell integration have moved into practice.</span></div></li><li><i>03</i><div><strong>Field playback</strong><span>On-site videos are moved into the 3D demo chain to close the loop between concept, scene and validation.</span></div></li><li><i>04</i><div><strong>Unity / modeling</strong><span>Presented as work in progress rather than over-claimed mastery.</span></div></li></ul></div><div class="video-rail"><div class="media-card"><h4>UE APK demo</h4><video autoplay="" loop="" muted="" playsinline="" poster="assets/img/unreal_demo_poster.jpg"><source src="assets/vid/unreal_demo.mp4" type="video/mp4"/></video></div><div class="media-card"><h4>Card motion</h4><video autoplay="" loop="" muted="" playsinline="" poster="assets/img/card_motion_poster.jpg"><source src="assets/vid/card_motion.mp4" type="video/mp4"/></video></div><div class="media-card"><h4>Wallpaper switch</h4><video autoplay="" loop="" muted="" playsinline="" poster="assets/img/wallpaper_switch_poster.jpg"><source src="assets/vid/wallpaper_switch.mp4" type="video/mp4"/></video></div><div class="media-card"><h4>Field validation</h4><video autoplay="" loop="" muted="" playsinline="" poster="assets/img/studio_research_poster.jpg"><source src="assets/vid/studio_research.mp4" type="video/mp4"/></video></div></div></div></section>
+<section class="section alt" id="innovation"><div class="wrap split reverse"><div class="media-stack sticky reveal"><div class="media-card"><h4>Red Dot / official certificate</h4><img alt="Official Red Dot certificate" src="assets/img/red_dot_full.png"/></div><div class="media-grid tight"><figure class="tile media-card"><img alt="Seat 3.0 review" src="assets/img/seat30_review.png"/><figcaption>Cockpit 3.0 / review &amp; decision</figcaption></figure><figure class="tile media-card"><img alt="Voice analysis" src="assets/img/voice_cover.png"/><figcaption>Voice interaction design analysis</figcaption></figure></div></div><div class="copy reveal"><div class="kicker-row">Innovation / Awards / Patents</div><h3>Innovation, awards, and patents only make sense when they are connected.</h3><p class="lead">From cockpit 3.0 research, to 3D scene rules, to first-inventor patent directions, and then to the 2024 Red Dot Award, these are not isolated decorations. They are evidence that design judgment survived project, market, and engineering verification.</p><div class="award-list"><div class="item">2024 Red Dot Winner · brand &amp; communication design (latest official certificate image)</div><div class="item">Multiple patent directions communicated with first-inventor role across ambient light, information display, audio, steering touch, and seat interaction</div><div class="item">34 title-pass cases supported over two years for national-level industrial design center indicators</div><div class="item">WI.RD.41 · interaction document release guide</div></div><div class="kb-grid"><div class="kb-card"><strong>Cockpit 3.0 review</strong><span>From research input to decision output, not just collecting screenshots.</span></div><div class="kb-card"><strong>Patent directions</strong><span>Turning innovation points into structured outputs that can be communicated and handed to engineering.</span></div><div class="kb-card"><strong>3D motion rules</strong><span>Built to survive engineering constraints, not to die in presentation decks.</span></div></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-card reveal"><div><div class="kicker-row">Let’s talk</div><h3>Let’s talk</h3><p>Email and phone stay the fastest route. WeChat is included for convenient reach-out.</p><div class="contact-list"><div><strong>Name</strong>Lucia</div><div><strong>Phone</strong>13840048695</div><div><strong>Email</strong>liusilu64@gmail.com</div><div><strong>Role</strong>Industrial Design Engineer</div></div></div><div class="qr-box"><img alt="WeChat QR" src="assets/img/wechat_qr.png"/></div></div></div></section>
+</main><footer>© Lucia · HMI Portfolio</footer><script>
+    document.addEventListener('contextmenu', e => {
+      if (e.target.closest('.protected')) e.preventDefault();
+    });
+    document.addEventListener('dragstart', e => {
+      if (e.target.closest('.protected')) e.preventDefault();
+    });
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('is-in');
+      });
+    }, {threshold:.14});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const onScroll = () => {
+      const y = window.scrollY;
+      document.querySelectorAll('[data-parallax]').forEach(el => {
+        const factor = parseFloat(el.dataset.parallax || 0);
+        el.style.transform = `translate3d(0, ${y * factor}px, 0)`;
+      });
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, {passive:true});
+
+    document.querySelectorAll('[data-gallery]').forEach(gallery => {
+      const main = gallery.querySelector('.gallery-main');
+      const title = gallery.querySelector('.gallery-caption strong');
+      const desc = gallery.querySelector('.gallery-caption span');
+      gallery.querySelectorAll('.thumb-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          gallery.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          main.src = btn.dataset.src;
+          main.alt = btn.dataset.alt || '';
+          if (title) title.textContent = btn.dataset.title || '';
+          if (desc) desc.textContent = btn.dataset.desc || '';
+        });
+      });
+    });
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) {
+      const shells = document.querySelectorAll('.waterfall-shell');
+      const state = [];
+      shells.forEach(shell => {
+        shell.querySelectorAll('.waterfall-track').forEach(track => {
+          const col = track.parentElement;
+          state.push({track, col, speed: parseFloat(track.dataset.speed || '0.2'), y: 0});
+        });
+      });
+      let last = 0;
+      function animate(ts){
+        if(!last) last = ts;
+        const dt = Math.min(32, ts - last);
+        last = ts;
+        state.forEach(s => {
+          const trackH = s.track.scrollHeight;
+          const viewH = s.col.clientHeight;
+          const max = Math.max(0, trackH - viewH);
+          s.y -= s.speed * dt;
+          if (-s.y >= max) s.y = 0;
+          s.track.style.transform = `translateY(${s.y}px)`;
+        });
+        requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+    }
+    </script><script src="assets/js/cinematic.js?v=13"></script></body></html>

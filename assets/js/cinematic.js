@@ -104,4 +104,32 @@
   updateCinematicScroll();
   window.addEventListener('scroll', updateCinematicScroll, { passive: true });
   window.addEventListener('resize', updateCinematicScroll);
+
+  const lazyVideos = Array.from(document.querySelectorAll('video source[data-src]'))
+    .map(source => source.closest('video'))
+    .filter(Boolean);
+
+  function loadVideo(video) {
+    if (video.dataset.videoLoaded === 'true') return;
+    video.querySelectorAll('source[data-src]').forEach(source => {
+      source.src = source.dataset.src;
+      source.removeAttribute('data-src');
+    });
+    video.dataset.videoLoaded = 'true';
+    video.load();
+    video.play().catch(() => {});
+  }
+
+  if ('IntersectionObserver' in window && lazyVideos.length) {
+    const videoObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        loadVideo(entry.target);
+        videoObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: '480px 0px' });
+    lazyVideos.forEach(video => videoObserver.observe(video));
+  } else {
+    lazyVideos.forEach(loadVideo);
+  }
 })();

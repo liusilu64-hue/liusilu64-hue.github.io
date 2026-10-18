@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9f7">
+  <meta name="description" content="电池图谱：汽车动力电池公开参数库。按供应商、化学体系和应用场景检索，查看参数口径、原始来源并横向对比。">
+  <title>电池图谱｜汽车动力电池参数库</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#/library" aria-label="电池图谱首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-copy"><strong>电池图谱</strong><small>BATTERY ATLAS</small></span>
+      </a>
+      <div class="global-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.5 4.5"></path></svg><input id="globalSearch" type="search" placeholder="搜索产品、供应商或技术关键词" aria-label="全站搜索"><kbd>/</kbd></div>
+      <nav class="topnav" aria-label="主导航"><button class="nav-link is-current" data-view="library">产品库</button><button class="nav-link" data-view="compare">参数对比 <span id="navCompareCount">0</span></button><button class="nav-link" data-view="guide">使用说明</button></nav>
+      <div class="header-meta"><span class="live-dot"></span> 公开资料样本 <b>10</b> 款</div>
+      <button id="mobileFilterBtn" class="mobile-filter" aria-label="打开筛选">筛选</button>
+    </header>
+
+    <div class="workspace">
+      <aside class="sidebar" id="sidebar" aria-label="产品筛选与列表">
+        <div class="side-head"><span class="eyebrow">EXPLORE</span><h2>动力电池产品库</h2><p>从产品进入，逐项核对指标与来源</p></div>
+        <div class="segmented" role="group" aria-label="列表视图"><button class="is-active" id="productMode">产品 <span id="allCount">10</span></button><button id="supplierMode">供应商 <span>4</span></button></div>
+        <div class="side-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.5 4.5"></path></svg><input id="sideSearch" type="search" placeholder="在当前列表中搜索" aria-label="筛选当前列表"></div>
+        <div class="filter-block"><div class="filter-title">材料体系 <button id="clearFilters" type="button">清除</button></div><div class="filter-pills" id="chemFilters"></div></div>
+        <div class="filter-block supplier-filter"><div class="filter-title">供应商</div><div class="filter-pills" id="supplierFilters"></div></div>
+        <div class="list-title"><span>产品列表</span><small id="resultCount">10 款</small></div>
+        <div id="productList" class="product-list"></div>
+        <div id="supplierList" class="supplier-list" hidden></div>
+        <div class="side-foot"><span class="foot-icon">i</span><span>资料按原始来源整理，未公布项以“—”显示。</span></div>
+      </aside>
+
+      <main id="mainContent" class="main-content" tabindex="-1"></main>
+
+      <aside class="right-rail" aria-label="快速工具与数据说明">
+        <div class="rail-card compare-card"><div class="rail-icon">▥</div><span class="eyebrow">QUICK COMPARE</span><h3>建立横向对比</h3><p>最多选择 3 款产品，统一查看参数与统计口径。</p><div id="compareMiniList" class="compare-mini-list"></div><button id="railCompareBtn" class="dark-button" type="button">打开对比工作台 <span>↗</span></button></div>
+        <div class="rail-card rail-note"><div class="note-top"><span class="verified-icon">✓</span><strong>数据说明</strong></div><p>收录厂商官方网站公开参数与产品宣称。不同产品的电芯、系统、整车数据不可直接等同。</p><a href="#/guide">查看方法说明 <span>↗</span></a></div>
+        <div class="rail-update"><span class="eyebrow">LATEST ADDITIONS</span><h3>最近收录</h3><div class="update-line"><b>2026</b><span>第三代麒麟电池</span></div><div class="update-line"><b>2026</b><span>第三代神行超充电池</span></div><div class="update-line"><b>2025</b><span>钠新乘用车动力电池</span></div></div>
+      </aside>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>

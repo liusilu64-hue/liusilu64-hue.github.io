@@ -1,0 +1,27 @@
+{
+  "id": "/steel-frontline-ipad/",
+  "name": "钢铁前线",
+  "short_name": "钢铁前线",
+  "description": "可离线游玩的坦克战斗游戏",
+  "lang": "zh-CN",
+  "start_url": "/steel-frontline-ipad/",
+  "scope": "/steel-frontline-ipad/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#111914",
+  "theme_color": "#111914",
+  "icons": [
+    {
+      "src": "/steel-frontline-ipad/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/steel-frontline-ipad/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

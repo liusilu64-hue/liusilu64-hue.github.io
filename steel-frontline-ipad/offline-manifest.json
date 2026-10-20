@@ -1,0 +1,98 @@
+{
+  "version": "6d2ff2714ff32cc0a3a3",
+  "urls": [
+    "/steel-frontline-ipad/assets/Assembly-DIxIADTE.js",
+    "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
+    "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
+    "/steel-frontline-ipad/assets/battlefield-soil-v1.jpg",
+    "/steel-frontline-ipad/assets/index-CA9O1mwC.js",
+    "/steel-frontline-ipad/assets/index-D7Jtixpq.css",
+    "/steel-frontline-ipad/assets/tank-paint-v1.png",
+    "/steel-frontline-ipad/assets/tank-rolled-steel-v4.png",
+    "/steel-frontline-ipad/icons/apple-touch-icon.png",
+    "/steel-frontline-ipad/icons/icon-192.png",
+    "/steel-frontline-ipad/icons/icon-512.png",
+    "/steel-frontline-ipad/index.html",
+    "/steel-frontline-ipad/manifest.webmanifest"
+  ],
+  "resources": [
+    {
+      "url": "/steel-frontline-ipad/assets/Assembly-DIxIADTE.js",
+      "bytes": 42648,
+      "mime": "text/javascript",
+      "sha256": "5a66684e44b09545a2bd96b38ae0f886fc96b35d07c57f654de41435e9e96358"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
+      "bytes": 13766,
+      "mime": "text/css",
+      "sha256": "2336b1ef6f2e198d9a1062a0b85e83cabecea34fdd8eb566e93904ae275ea521"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
+      "bytes": 2125873,
+      "mime": "image/png",
+      "sha256": "f4f40a580707a3e085239879fcbe500efdffb83ec6f47cfebf4aa77968cc9bbf"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/battlefield-soil-v1.jpg",
+      "bytes": 704547,
+      "mime": "image/jpeg",
+      "sha256": "dd6bdf6d29649916708aad0802b6ae1a8d18da84a4fc91c253d89020898dbb26"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/index-CA9O1mwC.js",
+      "bytes": 870732,
+      "mime": "text/javascript",
+      "sha256": "3b86a9a1d55c5a35f08886634c2241c576cb9f35ab4a16eda34d8074c4138e89"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/index-D7Jtixpq.css",
+      "bytes": 43271,
+      "mime": "text/css",
+      "sha256": "b222f07cef47f618ce756486654a0e1dd4da51ad8d65a335fac2a9ed48aa192e"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/tank-paint-v1.png",
+      "bytes": 3287578,
+      "mime": "image/png",
+      "sha256": "166216e47461a08cab2c790f3418f6c03fcf2d4ae14711ac98c26063996b8205"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/tank-rolled-steel-v4.png",
+      "bytes": 3301542,
+      "mime": "image/png",
+      "sha256": "10f3bdb28b74dcd0a3e82483cbff97e7c230dff759513b1e871c5a9efd6ab7b1"
+    },
+    {
+      "url": "/steel-frontline-ipad/icons/apple-touch-icon.png",
+      "bytes": 48005,
+      "mime": "image/png",
+      "sha256": "fc1953c6f3903e9c140f69cfff9fc0401b2d712389aa1ba1d8fa429b2f51068f"
+    },
+    {
+      "url": "/steel-frontline-ipad/icons/icon-192.png",
+      "bytes": 53814,
+      "mime": "image/png",
+      "sha256": "72256f05d842bd0b8eae7166508da8bc266fb57a74d51d807c1eec4795b25868"
+    },
+    {
+      "url": "/steel-frontline-ipad/icons/icon-512.png",
+      "bytes": 362449,
+      "mime": "image/png",
+      "sha256": "8b50989ad733a1894f47a40c89471318509696704945dedc0fd2165300e6ee93"
+    },
+    {
+      "url": "/steel-frontline-ipad/index.html",
+      "bytes": 4733,
+      "mime": "text/html"
+    },
+    {
+      "url": "/steel-frontline-ipad/manifest.webmanifest",
+      "bytes": 676,
+      "mime": "application/manifest+json",
+      "sha256": "5a42cf28fb2d448a6c1bbc8f6f31ee5ba17e276505e07065715966639a03542e"
+    }
+  ],
+  "totalBytes": 10859634
+}

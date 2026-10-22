@@ -1,13 +1,29 @@
 {
-  "version": "4978ab2192ec66292d75",
+  "version": "5f8c69ed116cadb4478a",
   "urls": [
-    "/steel-frontline-ipad/assets/Assembly-BN_cj6j8.js",
+    "/steel-frontline-ipad/assets/Assembly-jbnkEAs2.js",
     "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
     "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
     "/steel-frontline-ipad/assets/battlefield-soil-v1.jpg",
-    "/steel-frontline-ipad/assets/index-BXsRUNPJ.js",
+    "/steel-frontline-ipad/assets/ground-highland-albedo.webp",
+    "/steel-frontline-ipad/assets/ground-highland-normal.webp",
+    "/steel-frontline-ipad/assets/ground-highland-roughness.webp",
+    "/steel-frontline-ipad/assets/ground-rainforest-albedo.webp",
+    "/steel-frontline-ipad/assets/ground-rainforest-normal.webp",
+    "/steel-frontline-ipad/assets/ground-rainforest-roughness.webp",
+    "/steel-frontline-ipad/assets/ground-snow-albedo.webp",
+    "/steel-frontline-ipad/assets/ground-snow-normal.webp",
+    "/steel-frontline-ipad/assets/ground-snow-roughness.webp",
+    "/steel-frontline-ipad/assets/ground-urban-albedo.webp",
+    "/steel-frontline-ipad/assets/ground-urban-normal.webp",
+    "/steel-frontline-ipad/assets/ground-urban-roughness.webp",
+    "/steel-frontline-ipad/assets/index-C7YuXej4.js",
     "/steel-frontline-ipad/assets/index-DlrX1I1L.css",
+    "/steel-frontline-ipad/assets/tank-paint-normal-v1.png",
+    "/steel-frontline-ipad/assets/tank-paint-roughness-v1.png",
     "/steel-frontline-ipad/assets/tank-paint-v1.png",
+    "/steel-frontline-ipad/assets/tank-rolled-steel-normal-v1.png",
+    "/steel-frontline-ipad/assets/tank-rolled-steel-roughness-v1.png",
     "/steel-frontline-ipad/assets/tank-rolled-steel-v4.png",
     "/steel-frontline-ipad/icons/apple-touch-icon.png",
     "/steel-frontline-ipad/icons/icon-192.png",
@@ -17,10 +33,10 @@
   ],
   "resources": [
     {
-      "url": "/steel-frontline-ipad/assets/Assembly-BN_cj6j8.js",
+      "url": "/steel-frontline-ipad/assets/Assembly-jbnkEAs2.js",
       "bytes": 42648,
       "mime": "text/javascript",
-      "sha256": "ac7cb711a6e7ab564c889ba8c5b1162a15c08da22880bddd6c8ab60effdfabe3"
+      "sha256": "6ce79d989202ed60fb199632e4485f2718ed13367308ae4f66e5156864eacc5d"
     },
     {
       "url": "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
@@ -41,10 +57,82 @@
       "sha256": "dd6bdf6d29649916708aad0802b6ae1a8d18da84a4fc91c253d89020898dbb26"
     },
     {
-      "url": "/steel-frontline-ipad/assets/index-BXsRUNPJ.js",
-      "bytes": 951265,
+      "url": "/steel-frontline-ipad/assets/ground-highland-albedo.webp",
+      "bytes": 95336,
+      "mime": "image/webp",
+      "sha256": "6c5de779bb464cc24b04046d40e612f8df6d0ad797692346ae8debb2ef22f94c"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-highland-normal.webp",
+      "bytes": 477354,
+      "mime": "image/webp",
+      "sha256": "0f562c4dd7b6e2b77fc76d3931195036d681cf72f29c60a558d0d95fbe04d9e3"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-highland-roughness.webp",
+      "bytes": 138298,
+      "mime": "image/webp",
+      "sha256": "efe8b997d049ae0b0d72ad3dfcde1ee336e9274d2cb241caab13cf37b7282cd4"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-rainforest-albedo.webp",
+      "bytes": 36540,
+      "mime": "image/webp",
+      "sha256": "623930dc346bdc9b79736ddc134c134baaf7161a945f287de8f36c6a614f0a33"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-rainforest-normal.webp",
+      "bytes": 472722,
+      "mime": "image/webp",
+      "sha256": "d39565241e650a8e86056988d33111444e8b431f9f5581ec1158cb05ed9fcffd"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-rainforest-roughness.webp",
+      "bytes": 114014,
+      "mime": "image/webp",
+      "sha256": "08603f2599da01fb442f8600c731acdf8d9aba91615580db3c53f95162d0a0bc"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-snow-albedo.webp",
+      "bytes": 9094,
+      "mime": "image/webp",
+      "sha256": "4055a7d4b17c6328a2fbfcfa7e199001fb3a70276acbb32c0bc73fe51c311f22"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-snow-normal.webp",
+      "bytes": 422968,
+      "mime": "image/webp",
+      "sha256": "0c2491d2485eb5d16152c85737855c9e4c683180512881e59f31488774cccaef"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-snow-roughness.webp",
+      "bytes": 101336,
+      "mime": "image/webp",
+      "sha256": "e5ede717cabad11415d04fa4c2605360eaf082a91fec895f43dd063ca997c915"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-urban-albedo.webp",
+      "bytes": 62090,
+      "mime": "image/webp",
+      "sha256": "107f4e2a6e68f15ce68129b846c7ae18bbbe75210ac6e22f8ca0604c17233325"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-urban-normal.webp",
+      "bytes": 489024,
+      "mime": "image/webp",
+      "sha256": "e8d6c93d346852971040ef11afa5bc028aec2fe358fa07f23552bcfc67656894"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/ground-urban-roughness.webp",
+      "bytes": 120828,
+      "mime": "image/webp",
+      "sha256": "e61eaa43a726b0ca45e52789006637cf4a297c209b6154448adbad407c86c809"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/index-C7YuXej4.js",
+      "bytes": 1011939,
       "mime": "text/javascript",
-      "sha256": "6857c0adc0a1fa5a3f83b5fc4484ce3b32263c5aacd3ca913f68eff120ccd3e1"
+      "sha256": "d4eba6d212c56617adbdd1668f6b407a4f0704eb74c31eb694951ef63ad0be66"
     },
     {
       "url": "/steel-frontline-ipad/assets/index-DlrX1I1L.css",
@@ -53,10 +141,34 @@
       "sha256": "cc90fc6b56f16f2ce6d4fe16ce18e6627a01891b83d3ddbf160f242cda879ab1"
     },
     {
+      "url": "/steel-frontline-ipad/assets/tank-paint-normal-v1.png",
+      "bytes": 646078,
+      "mime": "image/png",
+      "sha256": "d3b23fb630a846a13989c2c1df2d0fe3af044a28fef42f643b062baf59072ee0"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/tank-paint-roughness-v1.png",
+      "bytes": 172362,
+      "mime": "image/png",
+      "sha256": "607bc4d31bc46d1df388098238b859b34c4abe84198816b8526efd27fb7b194e"
+    },
+    {
       "url": "/steel-frontline-ipad/assets/tank-paint-v1.png",
       "bytes": 3287578,
       "mime": "image/png",
       "sha256": "166216e47461a08cab2c790f3418f6c03fcf2d4ae14711ac98c26063996b8205"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/tank-rolled-steel-normal-v1.png",
+      "bytes": 627951,
+      "mime": "image/png",
+      "sha256": "2b7e2a8cca3d4bd286ff7e9001c4a87b5c531a7eabbb8dafc9cacf24ab97e998"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/tank-rolled-steel-roughness-v1.png",
+      "bytes": 228879,
+      "mime": "image/png",
+      "sha256": "0eca5d54aaec1845823fe20487fed65a0e26b8fb6e2d7cd42bf598a9965f7407"
     },
     {
       "url": "/steel-frontline-ipad/assets/tank-rolled-steel-v4.png",
@@ -94,5 +206,5 @@
       "sha256": "5a42cf28fb2d448a6c1bbc8f6f31ee5ba17e276505e07065715966639a03542e"
     }
   ],
-  "totalBytes": 10954155
+  "totalBytes": 15229703
 }

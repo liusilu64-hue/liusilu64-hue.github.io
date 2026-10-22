@@ -1,12 +1,12 @@
 {
-  "version": "26f0bcc2728e998e08bd",
+  "version": "3bf09f9399ec8eddc7ab",
   "urls": [
-    "/steel-frontline-ipad/assets/Assembly-BBXFAFVJ.js",
+    "/steel-frontline-ipad/assets/Assembly-Cmz0qi-z.js",
     "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
     "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
     "/steel-frontline-ipad/assets/battlefield-soil-v1.jpg",
-    "/steel-frontline-ipad/assets/index-DJfN4Zd_.js",
-    "/steel-frontline-ipad/assets/index-Dq0UXeV0.css",
+    "/steel-frontline-ipad/assets/index-CcqWUYe_.css",
+    "/steel-frontline-ipad/assets/index-DdWGRB0L.js",
     "/steel-frontline-ipad/assets/tank-paint-v1.png",
     "/steel-frontline-ipad/assets/tank-rolled-steel-v4.png",
     "/steel-frontline-ipad/icons/apple-touch-icon.png",
@@ -17,10 +17,10 @@
   ],
   "resources": [
     {
-      "url": "/steel-frontline-ipad/assets/Assembly-BBXFAFVJ.js",
+      "url": "/steel-frontline-ipad/assets/Assembly-Cmz0qi-z.js",
       "bytes": 42648,
       "mime": "text/javascript",
-      "sha256": "a856dba5adf7a74c92063230f3ad178997490761c2c4d76cc86c1d083305ba3f"
+      "sha256": "da389fb7e53bbcdbf2f6ca0a9563c6a058a0100e4c49ba697f343790a4bf8087"
     },
     {
       "url": "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
@@ -41,16 +41,16 @@
       "sha256": "dd6bdf6d29649916708aad0802b6ae1a8d18da84a4fc91c253d89020898dbb26"
     },
     {
-      "url": "/steel-frontline-ipad/assets/index-DJfN4Zd_.js",
-      "bytes": 939611,
-      "mime": "text/javascript",
-      "sha256": "5c52b1f7e512d25590937dbcde622bfa88689c9e9b80acd48c289a0f6992008e"
+      "url": "/steel-frontline-ipad/assets/index-CcqWUYe_.css",
+      "bytes": 56552,
+      "mime": "text/css",
+      "sha256": "c58e17b70a2a41872781c09fd645872b0ff5be694d9d626944a90cbe43a01c4a"
     },
     {
-      "url": "/steel-frontline-ipad/assets/index-Dq0UXeV0.css",
-      "bytes": 55042,
-      "mime": "text/css",
-      "sha256": "f678bf4773003f4ec990745e586d93eeb327c633832efb6291034e99f8b4b911"
+      "url": "/steel-frontline-ipad/assets/index-DdWGRB0L.js",
+      "bytes": 942315,
+      "mime": "text/javascript",
+      "sha256": "ec601bcdf2539b554dccb335db0d163181f4acc574f3069d2d52e93047cc90ed"
     },
     {
       "url": "/steel-frontline-ipad/assets/tank-paint-v1.png",
@@ -94,5 +94,5 @@
       "sha256": "5a42cf28fb2d448a6c1bbc8f6f31ee5ba17e276505e07065715966639a03542e"
     }
   ],
-  "totalBytes": 10940284
+  "totalBytes": 10944498
 }

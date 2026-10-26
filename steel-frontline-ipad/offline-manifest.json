@@ -1,7 +1,7 @@
 {
-  "version": "5f8c69ed116cadb4478a",
+  "version": "57d4cee37045950fa6cb",
   "urls": [
-    "/steel-frontline-ipad/assets/Assembly-jbnkEAs2.js",
+    "/steel-frontline-ipad/assets/Assembly-Ded-AfGd.js",
     "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
     "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
     "/steel-frontline-ipad/assets/battlefield-soil-v1.jpg",
@@ -17,7 +17,7 @@
     "/steel-frontline-ipad/assets/ground-urban-albedo.webp",
     "/steel-frontline-ipad/assets/ground-urban-normal.webp",
     "/steel-frontline-ipad/assets/ground-urban-roughness.webp",
-    "/steel-frontline-ipad/assets/index-C7YuXej4.js",
+    "/steel-frontline-ipad/assets/index-CTeEYdeE.js",
     "/steel-frontline-ipad/assets/index-DlrX1I1L.css",
     "/steel-frontline-ipad/assets/tank-paint-normal-v1.png",
     "/steel-frontline-ipad/assets/tank-paint-roughness-v1.png",
@@ -33,10 +33,10 @@
   ],
   "resources": [
     {
-      "url": "/steel-frontline-ipad/assets/Assembly-jbnkEAs2.js",
+      "url": "/steel-frontline-ipad/assets/Assembly-Ded-AfGd.js",
       "bytes": 42648,
       "mime": "text/javascript",
-      "sha256": "6ce79d989202ed60fb199632e4485f2718ed13367308ae4f66e5156864eacc5d"
+      "sha256": "79bd5ac9349dd592ce549e15d6aa81f29fcbc20bb1166cd78944a04ddfdfc516"
     },
     {
       "url": "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
@@ -129,10 +129,10 @@
       "sha256": "e61eaa43a726b0ca45e52789006637cf4a297c209b6154448adbad407c86c809"
     },
     {
-      "url": "/steel-frontline-ipad/assets/index-C7YuXej4.js",
-      "bytes": 1011939,
+      "url": "/steel-frontline-ipad/assets/index-CTeEYdeE.js",
+      "bytes": 1021793,
       "mime": "text/javascript",
-      "sha256": "d4eba6d212c56617adbdd1668f6b407a4f0704eb74c31eb694951ef63ad0be66"
+      "sha256": "41b788135f878fcf121ff4b329bdbcacbba99a84123f3cde6b113431a88dc929"
     },
     {
       "url": "/steel-frontline-ipad/assets/index-DlrX1I1L.css",
@@ -206,5 +206,5 @@
       "sha256": "5a42cf28fb2d448a6c1bbc8f6f31ee5ba17e276505e07065715966639a03542e"
     }
   ],
-  "totalBytes": 15229703
+  "totalBytes": 15239557
 }

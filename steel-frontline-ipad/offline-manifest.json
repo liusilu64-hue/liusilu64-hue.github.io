@@ -1,11 +1,11 @@
 {
-  "version": "942e190cca916b684195",
+  "version": "d27232a6e5eb6121f2ee",
   "urls": [
-    "/steel-frontline-ipad/assets/Assembly-1s5NXNr3.js",
     "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
+    "/steel-frontline-ipad/assets/Assembly-SnlE62ek.js",
     "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
     "/steel-frontline-ipad/assets/battlefield-soil-v1.jpg",
-    "/steel-frontline-ipad/assets/GLTFLoader-CG-85jV7.js",
+    "/steel-frontline-ipad/assets/GLTFLoader-9zha_MfM.js",
     "/steel-frontline-ipad/assets/ground-highland-albedo.webp",
     "/steel-frontline-ipad/assets/ground-highland-normal.webp",
     "/steel-frontline-ipad/assets/ground-highland-roughness.webp",
@@ -20,7 +20,7 @@
     "/steel-frontline-ipad/assets/ground-urban-roughness.webp",
     "/steel-frontline-ipad/assets/highland-sample.glb",
     "/steel-frontline-ipad/assets/index-CCLThAP_.css",
-    "/steel-frontline-ipad/assets/index-Detw-mu_.js",
+    "/steel-frontline-ipad/assets/index-ezXfwyzd.js",
     "/steel-frontline-ipad/assets/t34-85-sample.glb",
     "/steel-frontline-ipad/assets/tank-paint-normal-v1.png",
     "/steel-frontline-ipad/assets/tank-paint-roughness-v1.png",
@@ -36,16 +36,16 @@
   ],
   "resources": [
     {
-      "url": "/steel-frontline-ipad/assets/Assembly-1s5NXNr3.js",
-      "bytes": 42648,
-      "mime": "text/javascript",
-      "sha256": "86e575edaf1b230a10e7ae65db524e464d759452bfa4ffca3709b6cff8231104"
-    },
-    {
       "url": "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
       "bytes": 13766,
       "mime": "text/css",
       "sha256": "2336b1ef6f2e198d9a1062a0b85e83cabecea34fdd8eb566e93904ae275ea521"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/Assembly-SnlE62ek.js",
+      "bytes": 42648,
+      "mime": "text/javascript",
+      "sha256": "fb7f46de53712336283ce47ab22d4aa33f13a723af1e183e3f380304eaac121a"
     },
     {
       "url": "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
@@ -60,10 +60,10 @@
       "sha256": "dd6bdf6d29649916708aad0802b6ae1a8d18da84a4fc91c253d89020898dbb26"
     },
     {
-      "url": "/steel-frontline-ipad/assets/GLTFLoader-CG-85jV7.js",
+      "url": "/steel-frontline-ipad/assets/GLTFLoader-9zha_MfM.js",
       "bytes": 45092,
       "mime": "text/javascript",
-      "sha256": "17ce5f0d3a22b98e25650c0efaed6382d3c299117578dc9d33350eef67df1838"
+      "sha256": "045016d0eee48672b2447ad347d9fe0cd26a0c2dd53a49c28967ef6d97b42831"
     },
     {
       "url": "/steel-frontline-ipad/assets/ground-highland-albedo.webp",
@@ -150,16 +150,16 @@
       "sha256": "d6c2973155ea0687fcd9dced69b9176390b4ec2dfc6aa06609c24788caa50d9f"
     },
     {
-      "url": "/steel-frontline-ipad/assets/index-Detw-mu_.js",
-      "bytes": 1084522,
+      "url": "/steel-frontline-ipad/assets/index-ezXfwyzd.js",
+      "bytes": 1088964,
       "mime": "text/javascript",
-      "sha256": "490d1b2589eac0baea60f70c12ef5e075d80517669ebc896607d88070a5018dd"
+      "sha256": "f842258a537c63a7d703bffb6534b61ea41cd3dc5e1b0e49718e57656cc2d447"
     },
     {
       "url": "/steel-frontline-ipad/assets/t34-85-sample.glb",
-      "bytes": 3428456,
+      "bytes": 3453268,
       "mime": "model/gltf-binary",
-      "sha256": "69b498d580ae52afb9b980f678373088e62489d274f41fb71684ee79b73d7b86"
+      "sha256": "28859e013fcc52e4ffcac1ac55f90b4d3aa40aeffab2a27f753ca585921f7a53"
     },
     {
       "url": "/steel-frontline-ipad/assets/tank-paint-normal-v1.png",
@@ -227,5 +227,5 @@
       "sha256": "5a42cf28fb2d448a6c1bbc8f6f31ee5ba17e276505e07065715966639a03542e"
     }
   ],
-  "totalBytes": 21270988
+  "totalBytes": 21300242
 }

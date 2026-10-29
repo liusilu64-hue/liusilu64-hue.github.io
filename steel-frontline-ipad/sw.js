@@ -1,5 +1,5 @@
 /* Replaced by the post-build script; do not register this source in development. */
-const BUILD_VERSION = 'd27232a6e5eb6121f2ee';
+const BUILD_VERSION = '2a54f090388d6f8e2de6';
 const APP_ROOT = new URL('.', self.location.href || `${self.location.origin}/sw.js`).pathname;
 const SHELL_URL = `${APP_ROOT}index.html`;
 const CACHE_PREFIX = APP_ROOT === '/' ? 'steel-frontline-offline-' : `steel-frontline-offline-${APP_ROOT.slice(1).replaceAll('/', '-')}`;

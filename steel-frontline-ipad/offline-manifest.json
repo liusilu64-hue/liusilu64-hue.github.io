@@ -1,11 +1,11 @@
 {
-  "version": "6b7ea34ab322cba448c7",
+  "version": "bac548b0ee8b629d4dfd",
   "urls": [
-    "/steel-frontline-ipad/assets/Assembly-DgiYSuQ7.js",
-    "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
+    "/steel-frontline-ipad/assets/Assembly-BZB-golM.js",
+    "/steel-frontline-ipad/assets/Assembly-PCst5KU1.css",
     "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
     "/steel-frontline-ipad/assets/battlefield-soil-v1.jpg",
-    "/steel-frontline-ipad/assets/GLTFLoader-g_5BdbDY.js",
+    "/steel-frontline-ipad/assets/GLTFLoader-C_aJUJIj.js",
     "/steel-frontline-ipad/assets/ground-highland-albedo.webp",
     "/steel-frontline-ipad/assets/ground-highland-normal.webp",
     "/steel-frontline-ipad/assets/ground-highland-roughness.webp",
@@ -19,15 +19,22 @@
     "/steel-frontline-ipad/assets/ground-urban-normal.webp",
     "/steel-frontline-ipad/assets/ground-urban-roughness.webp",
     "/steel-frontline-ipad/assets/highland-sample.glb",
-    "/steel-frontline-ipad/assets/index-BOhdgIm0.css",
-    "/steel-frontline-ipad/assets/index-D9nkA7D3.js",
+    "/steel-frontline-ipad/assets/index-BBSMfpHv.css",
+    "/steel-frontline-ipad/assets/index-DEpqYpvQ.js",
     "/steel-frontline-ipad/assets/t34-85-sample.glb",
+    "/steel-frontline-ipad/assets/t34-custom-neutral-albedo.webp",
+    "/steel-frontline-ipad/assets/t34-custom-parts.glb",
     "/steel-frontline-ipad/assets/tank-paint-normal-v1.png",
     "/steel-frontline-ipad/assets/tank-paint-roughness-v1.png",
     "/steel-frontline-ipad/assets/tank-paint-v1.png",
     "/steel-frontline-ipad/assets/tank-rolled-steel-normal-v1.png",
     "/steel-frontline-ipad/assets/tank-rolled-steel-roughness-v1.png",
     "/steel-frontline-ipad/assets/tank-rolled-steel-v4.png",
+    "/steel-frontline-ipad/assets/workshop-floor-concrete.webp",
+    "/steel-frontline-ipad/assets/workshop-floor-normal.webp",
+    "/steel-frontline-ipad/assets/workshop-wall-concrete.webp",
+    "/steel-frontline-ipad/assets/workshop-wall-main.webp",
+    "/steel-frontline-ipad/assets/workshop-window.webp",
     "/steel-frontline-ipad/icons/apple-touch-icon.png",
     "/steel-frontline-ipad/icons/icon-192.png",
     "/steel-frontline-ipad/icons/icon-512.png",
@@ -36,16 +43,16 @@
   ],
   "resources": [
     {
-      "url": "/steel-frontline-ipad/assets/Assembly-DgiYSuQ7.js",
-      "bytes": 45970,
+      "url": "/steel-frontline-ipad/assets/Assembly-BZB-golM.js",
+      "bytes": 51369,
       "mime": "text/javascript",
-      "sha256": "63f6c0aa4e3fe4801fba5a4d2775cf45821cddbbe134e8fa420ffb57765322c1"
+      "sha256": "2dbccbc0043a7d199fe14d341a12d45acf5cf07ea040d3457d7716b7ad85f497"
     },
     {
-      "url": "/steel-frontline-ipad/assets/Assembly-MbVP5ThJ.css",
-      "bytes": 13766,
+      "url": "/steel-frontline-ipad/assets/Assembly-PCst5KU1.css",
+      "bytes": 13613,
       "mime": "text/css",
-      "sha256": "2336b1ef6f2e198d9a1062a0b85e83cabecea34fdd8eb566e93904ae275ea521"
+      "sha256": "e41f827b87a6be72f3a5e7dfeeda63bf59dd9390a0ec0631f7e604fd661d4d67"
     },
     {
       "url": "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
@@ -60,10 +67,10 @@
       "sha256": "dd6bdf6d29649916708aad0802b6ae1a8d18da84a4fc91c253d89020898dbb26"
     },
     {
-      "url": "/steel-frontline-ipad/assets/GLTFLoader-g_5BdbDY.js",
-      "bytes": 45092,
+      "url": "/steel-frontline-ipad/assets/GLTFLoader-C_aJUJIj.js",
+      "bytes": 45088,
       "mime": "text/javascript",
-      "sha256": "bf16bc09e1dedb4580c39e3682d78deab8ccca8b18dc0f820cfb82155aa49c6f"
+      "sha256": "d5840908ab81c2b84a52f76e4c9ac13ce4234ad406233924561b4164d8f93355"
     },
     {
       "url": "/steel-frontline-ipad/assets/ground-highland-albedo.webp",
@@ -144,22 +151,34 @@
       "sha256": "fc05ec23c20aba69e5353cf54f12497e9ef09962399e6864f9994f98e9d87ea8"
     },
     {
-      "url": "/steel-frontline-ipad/assets/index-BOhdgIm0.css",
-      "bytes": 61497,
+      "url": "/steel-frontline-ipad/assets/index-BBSMfpHv.css",
+      "bytes": 61397,
       "mime": "text/css",
-      "sha256": "718d3f6355e182f41943354761d1d7775be03007ee844ef78fbe239619fea42c"
+      "sha256": "e422ebcba8ca7875df95054fa0fc09ee29dd9f54a24c9f10c6c0ec927e026355"
     },
     {
-      "url": "/steel-frontline-ipad/assets/index-D9nkA7D3.js",
-      "bytes": 1099732,
+      "url": "/steel-frontline-ipad/assets/index-DEpqYpvQ.js",
+      "bytes": 1105364,
       "mime": "text/javascript",
-      "sha256": "b40032ca62bcb59bc6c8d941e680e3518ab81bba891b6c668a359d314f97af38"
+      "sha256": "35173ee27e718dd75982629fc0508eb134f880f9397db23c749972f2ee416094"
     },
     {
       "url": "/steel-frontline-ipad/assets/t34-85-sample.glb",
       "bytes": 3454412,
       "mime": "model/gltf-binary",
       "sha256": "f1538ce6cb0c4225d358b5034f8854f5d1214445cd7bb0bd827cbc91dd34230c"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/t34-custom-neutral-albedo.webp",
+      "bytes": 87346,
+      "mime": "image/webp",
+      "sha256": "55f6ce0e3c62d9bdf62c08739376a2e7b0d9eaed82c5dd2b958e7775a23afa25"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/t34-custom-parts.glb",
+      "bytes": 751972,
+      "mime": "model/gltf-binary",
+      "sha256": "d612370b8c25dde706571e42c6f7f769237a47417007ecd51d673daf5ea6f80f"
     },
     {
       "url": "/steel-frontline-ipad/assets/tank-paint-normal-v1.png",
@@ -198,6 +217,36 @@
       "sha256": "10f3bdb28b74dcd0a3e82483cbff97e7c230dff759513b1e871c5a9efd6ab7b1"
     },
     {
+      "url": "/steel-frontline-ipad/assets/workshop-floor-concrete.webp",
+      "bytes": 7976,
+      "mime": "image/webp",
+      "sha256": "60b6f6bb988f9b218a2b19cd80b9e807614bf05c28b1fe9f9355efca12247b15"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/workshop-floor-normal.webp",
+      "bytes": 26102,
+      "mime": "image/webp",
+      "sha256": "bf06d07fa914ebf6eccc0c7247f745a3df50d41ce1983a4c2a3a8e4605199bc1"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/workshop-wall-concrete.webp",
+      "bytes": 7584,
+      "mime": "image/webp",
+      "sha256": "b03e8fafc3ea5369186accd5f896bb6a4784d8ae228702aced2409d92bfc584c"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/workshop-wall-main.webp",
+      "bytes": 73114,
+      "mime": "image/webp",
+      "sha256": "1b2d84a80f59c084a9261a14527874000faef8770f184244d683925ecc8a46e6"
+    },
+    {
+      "url": "/steel-frontline-ipad/assets/workshop-window.webp",
+      "bytes": 26202,
+      "mime": "image/webp",
+      "sha256": "3702dbf56aec11b695427f16995f19266ce95f1ffa400603585190ffd2f669ed"
+    },
+    {
       "url": "/steel-frontline-ipad/icons/apple-touch-icon.png",
       "bytes": 48005,
       "mime": "image/png",
@@ -227,5 +276,5 @@
       "sha256": "5a42cf28fb2d448a6c1bbc8f6f31ee5ba17e276505e07065715966639a03542e"
     }
   ],
-  "totalBytes": 21315680
+  "totalBytes": 22306750
 }

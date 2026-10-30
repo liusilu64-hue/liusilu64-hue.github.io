@@ -1,11 +1,11 @@
 {
-  "version": "3f2ebba4d0d6f9ab674d",
+  "version": "5c21ae0e7f9dd8d2ff22",
   "urls": [
-    "/steel-frontline-ipad/assets/Assembly-D_FWuauH.js",
+    "/steel-frontline-ipad/assets/Assembly-ekQ_xZZi.js",
     "/steel-frontline-ipad/assets/Assembly-PCst5KU1.css",
     "/steel-frontline-ipad/assets/assembly-workshop-v1.png",
     "/steel-frontline-ipad/assets/battlefield-soil-v1.jpg",
-    "/steel-frontline-ipad/assets/GLTFLoader-B1CIe-Vr.js",
+    "/steel-frontline-ipad/assets/GLTFLoader-BlBel2Do.js",
     "/steel-frontline-ipad/assets/ground-highland-albedo.webp",
     "/steel-frontline-ipad/assets/ground-highland-normal.webp",
     "/steel-frontline-ipad/assets/ground-highland-roughness.webp",
@@ -20,7 +20,7 @@
     "/steel-frontline-ipad/assets/ground-urban-roughness.webp",
     "/steel-frontline-ipad/assets/highland-sample.glb",
     "/steel-frontline-ipad/assets/index-BBSMfpHv.css",
-    "/steel-frontline-ipad/assets/index-BlYI9Ubv.js",
+    "/steel-frontline-ipad/assets/index-C7zJJYX-.js",
     "/steel-frontline-ipad/assets/panther-g-sample.glb",
     "/steel-frontline-ipad/assets/rainforest-bark-albedo.webp",
     "/steel-frontline-ipad/assets/rainforest-bark-photo.webp",
@@ -50,10 +50,10 @@
   ],
   "resources": [
     {
-      "url": "/steel-frontline-ipad/assets/Assembly-D_FWuauH.js",
+      "url": "/steel-frontline-ipad/assets/Assembly-ekQ_xZZi.js",
       "bytes": 52718,
       "mime": "text/javascript",
-      "sha256": "b01a1484e4b870e6bcd127b2e5a67717430b4a5db529149b3eea9906fb65666a"
+      "sha256": "9f55a4462ad6b8ba09ad25c56b0e998d6e0022a1dd0f1e4aafec5aeb0c6023e8"
     },
     {
       "url": "/steel-frontline-ipad/assets/Assembly-PCst5KU1.css",
@@ -74,10 +74,10 @@
       "sha256": "dd6bdf6d29649916708aad0802b6ae1a8d18da84a4fc91c253d89020898dbb26"
     },
     {
-      "url": "/steel-frontline-ipad/assets/GLTFLoader-B1CIe-Vr.js",
+      "url": "/steel-frontline-ipad/assets/GLTFLoader-BlBel2Do.js",
       "bytes": 45085,
       "mime": "text/javascript",
-      "sha256": "33fd224244058ac178844fc459a424a545e2c89de734433e797704138ee6cd63"
+      "sha256": "29b6aca7ef5db7e66e6141e56d9f866e361d814878c4920b0441ba946e0e82ab"
     },
     {
       "url": "/steel-frontline-ipad/assets/ground-highland-albedo.webp",
@@ -164,10 +164,10 @@
       "sha256": "e422ebcba8ca7875df95054fa0fc09ee29dd9f54a24c9f10c6c0ec927e026355"
     },
     {
-      "url": "/steel-frontline-ipad/assets/index-BlYI9Ubv.js",
-      "bytes": 1116731,
+      "url": "/steel-frontline-ipad/assets/index-C7zJJYX-.js",
+      "bytes": 1120137,
       "mime": "text/javascript",
-      "sha256": "6f4ff3e4a158b65d3fc0ac8b67b3dc13de9634e081377791e8c4a2fba500b58b"
+      "sha256": "9fc1032f9c1ef74a6f25b1b3b70a65ef92e2c678c6f412573ddfd7ce5627d4a6"
     },
     {
       "url": "/steel-frontline-ipad/assets/panther-g-sample.glb",
@@ -325,5 +325,5 @@
       "sha256": "5a42cf28fb2d448a6c1bbc8f6f31ee5ba17e276505e07065715966639a03542e"
     }
   ],
-  "totalBytes": 25565237
+  "totalBytes": 25568643
 }
